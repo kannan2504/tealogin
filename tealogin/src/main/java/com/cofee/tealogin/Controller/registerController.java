@@ -19,7 +19,7 @@ public class registerController {
 
         return ResponseEntity.ok("Registeration successfull");
     }
-    return ResponseEntity.status(HttpStatus.CONFLICT).body("Email aldreay exists");
+    return ResponseEntity.status(HttpStatus.CONFLICT).body("Email aldready exists");
 
     }
 
