@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+             font-family: Arial, sans-serif;
+             background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container{
+            background-color: whitesmoke;
+            width: 300px;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 5px 30px rgb(0, 0, 0,0.5);
+        }
+
+        .user-input{
+           
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 10px 30px;
+            color: whitesmoke;
+            background-color: blue;
+            transition:  0.5s ease-in;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: transparent;
+            border: 2px solid rgb(68, 109, 230);
+            color: blue;
+        }
+        
+        input{
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border: 1px solid rgb(136, 135, 135);
+            border-radius: 5px;
+            
+        }
+
+        input:focus{
+            border-color: aqua;
+        }
+        p{
+            font-size: 14px;
+            
+        }
+        p a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="registerform">
+            <h2>Register Now</h2>
+            <div class="user-input">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail"><br>
+             </div>
+            <div class="user-input">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone"><br>
+            </div>
+
+            <div class="user-input">
+                    <label for="passwrd">Password</label>
+                    <input type="password" name="password" id="password"><br>
+            </div>
+            <button type ="submit" >Register</button>
+            <p>Account already exists ? <a href="login.html">Login Now</a></p>
+
+
+
+            </form>
+        </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

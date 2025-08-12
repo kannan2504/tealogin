@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+                
+        }
+        .form-container{
+           
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+
+        }
+       
+        button{
+            padding: 10px 30px;
+            color: whitesmoke;
+            background-color: blue;
+            transition:  0.5s ease-in;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: transparent;
+            border: 2px solid rgb(68, 109, 230);
+            color: blue;
+        }
+        .user-input{
+             margin-bottom: 15px;
+        }
+        p a{
+            text-decoration: none;
+        }
+        p a:hover{
+            text-decoration: underline;
+        }
+        p{
+            font-size: 14px;
+        }
+        input{
+             width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition:  0.3s ease-in;
+        }
+        input:focus{
+             border-color: #4facfe;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="form-container"> 
+         <h2>Login Now</h2>
+        <form class="form" id="loginform">
+            <div class="user-input">
+                <label for="mail">Email:    </label>
+                <input type="email" name="mail" id="mail"><br>
+            </div>
+            <div class="user-input">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"><br>
+            </div>
+            <button type ="submit" >Login</button>
+            <p>dont have a account ?<a href="Register.html">Register Now</a></button></p>
+
+        </form>
+      
+</div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
